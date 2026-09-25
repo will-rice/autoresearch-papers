@@ -3,10 +3,38 @@
 Standalone paper discovery and conversion for Research papers on AI agents that automate machine learning engineering and research, including MLE-bench and related benchmarks.
 
 <!-- papers-index:start -->
+
 # Papers
 
-| Published | Identifier | Title | Source |
-| --- | --- | --- | --- |
+| Published                 | Identifier       | Title                                                                                                                                                      | Source      |
+| ------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 2026-09-23T00:00:00+00:00 | arxiv:2609.27490 | [WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents](https://huggingface.co/papers/2609.27490)                                          | huggingface |
+| 2026-09-22T00:00:00+00:00 | arxiv:2609.26457 | [Recursive self-improvement of AI research agents](https://huggingface.co/papers/2609.26457)                                                               | huggingface |
+| 2026-09-14T00:00:00+00:00 | arxiv:2609.15818 | [Atria Dawn: The Dawn of Agentic Superintelligence](https://huggingface.co/papers/2609.15818)                                                              | huggingface |
+| 2026-09-09T00:00:00+00:00 | arxiv:2609.10539 | [IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications](https://huggingface.co/papers/2609.10539)                           | huggingface |
+| 2026-09-08T00:00:00+00:00 | arxiv:2609.09113 | [SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?](https://huggingface.co/papers/2609.09113)                            | huggingface |
+| 2026-09-07T00:00:00+00:00 | arxiv:2609.09219 | [Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents](https://huggingface.co/papers/2609.09219)      | huggingface |
+| 2026-09-02T00:00:00+00:00 | arxiv:2609.02749 | [Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills](papers/arxiv-2609-02749--373e2b276ee2.md)                                                | huggingface |
+| 2026-08-31T00:00:00+00:00 | arxiv:2609.00365 | [Dr. Claw: An AI Scientist Workspace for Vibe Research](papers/arxiv-2609-00365--0e48367e6ecf.md)                                                          | huggingface |
+| 2026-08-31T00:00:00+00:00 | arxiv:2608.31119 | [PaperGym: Rubric-Centered Evolution for Research-Plan Generation](papers/arxiv-2608-31119--5a41d65cf367.md)                                               | huggingface |
+| 2026-08-31T00:00:00+00:00 | arxiv:2608.30391 | [Using Grounded Theory for Agent Behavior Analysis at Scale](papers/arxiv-2608-30391--23eb24277cd0.md)                                                     | huggingface |
+| 2026-08-29T00:00:00+00:00 | arxiv:2608.29310 | [Super Library Agent: Joint Generation and Maintenance of Multiple Applications Beyond the Single Codebase](papers/arxiv-2608-29310--ed77e177bea9.md)      | huggingface |
+| 2026-08-29T00:00:00+00:00 | arxiv:2608.12564 | [Scaling Automatic Research Agents via World Models](papers/arxiv-2608-12564--9a56cd73d4fb.md)                                                             | huggingface |
+| 2026-08-23T00:00:00+00:00 | arxiv:2608.17906 | [AutoResearch: Insight In, Hallucination Out](papers/arxiv-2608-17906--0fcc8c910768.md)                                                                    | huggingface |
+| 2026-08-14T00:00:00+00:00 | arxiv:2608.14905 | [How Do Agents Fail on AutoResearch: End-to-End Diagnostic Evaluation on 100 Real-World Frontier Research Tasks](papers/arxiv-2608-14905--41b35fcabf7e.md) | huggingface |
+| 2026-08-13T00:00:00+00:00 | arxiv:2608.13558 | [OmniScientist: An Omni-Modal Omni-Discipline AI Scientist](papers/arxiv-2608-13558--7e5244b502a6.md)                                                      | huggingface |
+| 2026-08-13T00:00:00+00:00 | arxiv:2608.13417 | [Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development](papers/arxiv-2608-13417--55ea285b61fd.md)            | huggingface |
+| 2026-08-12T00:00:00+00:00 | arxiv:2608.11924 | [Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill](papers/arxiv-2608-11924--dfd968ba6733.md)                                     | huggingface |
+| 2026-08-05T00:00:00+00:00 | arxiv:2608.04505 | [K-EXAONE 2.0 Technical Report](papers/arxiv-2608-04505--4c6d44829ae4.md)                                                                                  | huggingface |
+| 2026-08-02T00:00:00+00:00 | arxiv:2608.14667 | [Position: AI Agents in Scientific Teams Should Be Studied as Human-Agent Systems](papers/arxiv-2608-14667--e44da32411fe.md)                               | huggingface |
+| 2026-07-30T00:00:00+00:00 | arxiv:2607.28568 | [Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering](papers/arxiv-2607-28568--d49aea8485e5.md)        | huggingface |
+| 2026-07-30T00:00:00+00:00 | arxiv:2607.28227 | [Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents](papers/arxiv-2607-28227--efbc9702cc64.md)                | huggingface |
+| 2026-07-29T00:00:00+00:00 | arxiv:2607.27191 | [Can AI agents conduct open-ended AI research? Early evidence from two case studies](papers/arxiv-2607-27191--2474265fa2a1.md)                             | huggingface |
+| 2026-07-28T00:00:00+00:00 | arxiv:2607.23193 | [OmniScope: Modality-Decoupled Token Compression for Omnimodal Large Language Models](papers/arxiv-2607-23193--b62eac9278ec.md)                            | huggingface |
+| 2026-07-24T00:00:00+00:00 | arxiv:2607.22375 | [IDEAgent: Agentic Quality-Diversity Search for Research Idea Generation](papers/arxiv-2607-22375--144319445e03.md)                                        | huggingface |
+| 2026-07-20T00:00:00+00:00 | arxiv:2608.11216 | [AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research](papers/arxiv-2608-11216--f71eeae6c676.md)                             | huggingface |
+| 2026-07-13T00:00:00+00:00 | arxiv:2607.22682 | [A Vocabulary for Multi-Agent Automated Research Systems](papers/arxiv-2607-22682--c743e8ddcca4.md)                                                        | huggingface |
+
 <!-- papers-index:end -->
 
 ## Architecture
