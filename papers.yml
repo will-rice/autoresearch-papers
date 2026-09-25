@@ -1,0 +1,50 @@
+repository:
+  name: "Autoresearch Papers"
+  slug: "autoresearch-papers"
+  description: "Research papers on AI agents that automate machine learning engineering and research, including MLE-bench and related benchmarks"
+adapters:
+  - name: arxiv
+    enabled: true
+    secret_env: null
+    lookback_days: 8
+    backfill_start: 2023-01-01
+    backfill_days: 90
+    page_size: 200
+    max_pages: 10
+    max_results: 2000
+    filters:
+      search_query: "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.SE OR cat:cs.MA) AND (all:\"MLE-bench\" OR all:\"MLAgentBench\" OR all:\"RE-Bench\" OR all:\"MLE-Dojo\" OR all:\"MLR-Bench\" OR all:\"PaperBench\" OR all:\"DSBench\" OR all:\"ML engineering agent\" OR all:\"machine learning engineering\" OR all:\"ML research agent\" OR all:\"AI research agent\" OR all:\"autonomous research\" OR all:\"AI scientist\" OR all:\"autoresearch\" OR all:\"automated research\" OR all:\"research automation\" OR all:\"automating AI research\" OR all:\"automated machine learning\" OR all:\"AutoML agent\" OR all:\"data science agent\" OR all:\"Kaggle competition\")"
+  - name: huggingface
+    enabled: true
+    secret_env: null
+    lookback_days: 8
+    backfill_start: 2023-05-04
+    backfill_days: 365
+    page_size: 100
+    max_pages: 100
+    max_results: 2000
+    filters: {}
+topic:
+  include_any: []
+  include_all: []
+  exclude_any: []
+  categories: []
+  plugin: "topic_plugin:accept_topic"
+fetch:
+  request_timeout_seconds: 30
+  retries: 3
+  backoff_seconds: 1
+  total_deadline_seconds: 900
+conversion:
+  max_batches_per_run: 20
+  max_papers: 20
+  max_cost: 1000
+  timeout_seconds: 1800
+  html_cost: 2
+  latex_cost: 4
+  pdf_cost: 20
+  deadline_seconds: 10800
+concurrency:
+  html: 4
+  latex: 2
+  pdf: 1
