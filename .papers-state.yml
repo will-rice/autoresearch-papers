@@ -4,9 +4,9 @@ backfill:
     covered_from: '2023-01-01T00:00:00Z'
   huggingface:
     continuation:
-      cursor: eyJkYXRlIjoiMjAyMy0xMC0zMCIsInBhZ2UiOjEsInNvdXJjZV9jb25zdW1lZCI6MjYwOH0
-      window_end: '2024-09-17T18:59:56.896465Z'
-      window_start: '2023-09-18T18:59:56.896465Z'
-    covered_from: '2024-09-17T18:59:56.896465Z'
+      cursor: eyJkYXRlIjoiMjAyMy0wOC0zMSIsInBhZ2UiOjAsInNvdXJjZV9jb25zdW1lZCI6OTJ9
+      window_end: '2023-09-18T18:59:56.896465Z'
+      window_start: '2023-05-04T00:00:00Z'
+    covered_from: '2023-09-18T18:59:56.896465Z'
 continuations: {}
 failures: {}
