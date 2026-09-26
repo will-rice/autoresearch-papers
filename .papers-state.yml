@@ -4,10 +4,10 @@ backfill:
     covered_from: '2023-01-01T00:00:00Z'
   huggingface:
     continuation:
-      cursor: eyJkYXRlIjoiMjAyNS0xMC0wMSIsInBhZ2UiOjAsInNvdXJjZV9jb25zdW1lZCI6ODIzMX0
-      window_end: '2026-09-17T18:59:56.896465Z'
-      window_start: '2025-09-17T18:59:56.896465Z'
-    covered_from: '2026-09-17T18:59:56.896465Z'
+      cursor: eyJkYXRlIjoiMjAyNS0wOC0wNCIsInBhZ2UiOjAsInNvdXJjZV9jb25zdW1lZCI6NjQzfQ
+      window_end: '2025-09-17T18:59:56.896465Z'
+      window_start: '2024-09-17T18:59:56.896465Z'
+    covered_from: '2025-09-17T18:59:56.896465Z'
 continuations: {}
 failures:
   arxiv:2604.05013v2:
