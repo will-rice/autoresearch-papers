@@ -3,10 +3,7 @@ backfill:
     continuation: null
     covered_from: '2023-01-01T00:00:00Z'
   huggingface:
-    continuation:
-      cursor: eyJkYXRlIjoiMjAyMy0wNS0wNSIsInBhZ2UiOjEsInNvdXJjZV9jb25zdW1lZCI6OTAxfQ
-      window_end: '2023-09-18T18:59:56.896465Z'
-      window_start: '2023-05-04T00:00:00Z'
-    covered_from: '2023-09-18T18:59:56.896465Z'
+    continuation: null
+    covered_from: '2023-05-04T00:00:00Z'
 continuations: {}
 failures: {}
