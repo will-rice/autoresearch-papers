@@ -669,7 +669,7 @@ cannot express the repository rule; the plugin accepts `Paper` and returns
 
 Fetch request timeouts are 1-120 seconds, retries are 0-5, backoff is 0-30
 seconds, and the shared fetch deadline is 60-7200 seconds. Conversion allows
-1-20 batches per run, 1-100 papers per batch, and a total cost budget of 1-1000. A run stops starting batches after `deadline_seconds` (default 10800, 600-18000) so it always pushes before the nightly step's 330-minute timeout. Each converter may run for 60-3600 seconds
+1-20 batches per run, 1-100 papers per batch, and a total cost budget of 1-1000. At `deadline_seconds` (default 10800, 600-18000) a run stops starting batches and cancels conversions still running, leaving those papers pending without a strike, so it always pushes before the nightly step's 330-minute timeout. Each converter may run for 60-3600 seconds
 before it is terminated. Per-paper HTML and LaTeX costs are 1-100; PDF cost is
 1-1000. HTML and LaTeX concurrency is 1-4.
 PDF concurrency is always exactly 1.
@@ -710,10 +710,13 @@ deterministic batches.
 
 A paper failure does not stop peers. A third consecutive scheduled failure
 creates a colocated `.fixme.txt`; fix the input and remove the marker to retry.
-Permanent per-paper download failures (including HTTP 404/410 and invalid input
-URLs) count toward that paper's failure history without cancelling peers.
-Authentication, rate limits, outages, network/timeouts, disk failures, missing
-tools, and resource exhaustion fail the run explicitly.
+Any failure downloading one paper's input (HTTP errors, DNS, connection
+failures, timeouts, invalid URLs) counts toward that paper's failure history
+without cancelling peers. HTTP 429 is the exception: the paper is deferred
+without a strike, its host is not contacted again that run, and a later run
+retries it. Hosts known to block bursts (bioRxiv) are also paced to one request
+at a time. Source API failures skip that source for the run; disk failures,
+missing tools, and resource exhaustion fail the run explicitly.
 
 ## Formatting
 
@@ -724,7 +727,7 @@ corpus formatting runs only through the manual sharded workflow.
 
 The nightly Actions summary reports per-source fetched, accepted,
 deduplicated, and rejected counts; inventory, generated, pending, attempted,
-succeeded, failed, and fixme counts; timings; continuation, cap, retry, and
+succeeded, failed, deferred, and fixme counts; timings; continuation, cap, retry, and
 deadline events; and fixme paths.
 
 The weekly template workflow runs Copier against an explicit release,
